@@ -1,0 +1,124 @@
+@use "base" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    @include flexLayout(space-between);
+    height: 100px;
+    margin: 0px 30px;
+
+    &-logo{
+        width: 30%;
+        padding-bottom: 10px;
+        .logo-img{
+            height: 45px;
+            width: 200px;
+        }
+    }
+
+    &-navigation{
+        width: 30%;
+        .nav-list{
+            @include flexLayout(space-evenly);
+            &-item{
+               list-style: none;
+               display: inline;
+               a{
+                    text-decoration: none;
+                    color: $color-primary;
+                    font-family: $font-poppins;
+                    font-size: 16px;
+                    font-weight: bold;
+                    
+               }
+               &:hover{
+                transform: scale(1.1);
+                transition: 1s;
+                }
+            }
+        }
+    }
+
+    &-buttons{
+        width: 30%;
+        @include flexLayout(right);
+    }
+}
+
+.about{
+    height: 500px;
+    @include flexLayout(center);
+    background-color: $color-primary;
+    box-shadow: inset 0 0 0.7em 0.5em $color-dark-blue;
+    &-info{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+
+        &-left{
+            width: 50%;
+
+            .about-info-heading{
+                @include titleLayout;
+            }
+            .about-info-text{
+                color: $color-white;
+                font-family: $font-Young-Serif;
+            }
+        }
+
+        &-right{
+            width: 50%;
+            .about-info-image{
+                height: 600px;
+                position: absolute;
+                left: 1200px;
+                top: 60px;
+            }
+        }
+    }
+}
+
+.gallery{
+    height: 800px;
+    width: 100%;
+    @include flexLayout;
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+.footer{
+    @include flexLayout(space-evenly);
+    flex-direction: column;
+    background-color: $color-primary;
+    color: $color-white;
+    font-family: $font-poppins;
+    margin-bottom: 0;
+    height: 250px;
+
+    &-contact{
+        &-title{
+            @include titleLayout;
+            &-link{
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+        &-list{
+            
+            &-item{
+                list-style: none;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+        
+    }
+}
