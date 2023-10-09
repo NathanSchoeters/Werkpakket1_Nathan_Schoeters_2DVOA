@@ -1,7 +1,7 @@
 //Colors
 $color-primary: #127bde;
 $color-secondary: #dbdbdb;
-//$color-tertiary: #eb7a23;
+$color-tertiary: #eb7a23;
 $color-black: #1f1e1e;
 $color-white: #eef5fc;
 $color-dark-blue: #0c579c;
@@ -17,8 +17,8 @@ $font-Young-Serif: 'Young Serif', sans-serif;
     align-items: center;
 }
 
-@mixin titleLayout($font-size:36px){
-    color: $color-white;
+@mixin titleLayout($font-size:36px,$title-color: $color-white){
+    color: $title-color;
     font-weight: bold;
     font-family: $font-poppins;
     font-size: $font-size;
@@ -26,14 +26,15 @@ $font-Young-Serif: 'Young Serif', sans-serif;
 
 @mixin buttonLayout{
     height:40px;
-    width: 60px;
-    background-color: $color-white;
-    color: $color-primary;
+    width: 80px;
+    background-color: $color-primary;
+    color: $color-white;
     border: 3px solid $color-primary;
     border-radius: 5px;
+    margin: 3px;
     cursor: pointer;
     &:hover{
-        background-color: $color-secondary;
+        background-color: $color-white;
         color: $color-primary;
         transition: 0.5s;
     }

@@ -15,61 +15,56 @@
 }
 
 .card {
-  height: 500px;
-  width: 25%;
-  border-radius: 7px;
-  background-color: #127bde;
-  padding: 30px;
+  margin: 20 0 20 0;
+  border-radius: 3px;
+  padding: 20 0 20 20;
+  height: 250px;
+  width: 40%;
   display: flex;
-  justify-content: space-between;
+  box-shadow: #dbdbdb 6px 2px 16px 0px, #dbdbdb -6px -2px 16px 0px;
+}
+.card-left {
+  width: 60%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
 }
-.card-image {
-  background-color: white;
-  height: 350px;
-  padding: 5px;
-}
-.card-image-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card-title {
-  color: #eef5fc;
+.card-left-title {
+  color: #0c579c;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  font-size: 28px;
+  font-size: 42px;
 }
-.card-text {
-  color: #eef5fc;
-  font-family: "Caveat", sans-serif;
-  font-size: 16px;
+.card-left-text {
+  color: #0c579c;
+  font-family: "Young Serif", sans-serif;
 }
-.card-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.card-info-price {
-  color: #eef5fc;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-size: 36px;
-}
-.card-info-button {
-  height: 40px;
-  width: 60px;
-  background-color: #eef5fc;
+.card-left-price {
   color: #127bde;
-  border: 3px solid #127bde;
-  border-radius: 5px;
-  cursor: pointer;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
 }
-.card-info-button:hover {
-  border: 3px solid #eef5fc;
+.card-left-button {
+  height: 40px;
+  width: 80px;
   background-color: #127bde;
   color: #eef5fc;
+  border: 3px solid #127bde;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+}
+.card-left-button:hover {
+  background-color: #eef5fc;
+  color: #127bde;
   transition: 0.5s;
+}
+.card-right {
+  width: 40%;
+}
+.card-right-image {
+  height: 100%;
 }
 
 * {
@@ -159,7 +154,7 @@
 }
 
 .gallery {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -168,7 +163,7 @@
 .gallery .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80%;
 }
 
@@ -182,6 +177,7 @@
   font-family: "Poppins", sans-serif;
   margin-bottom: 0;
   height: 250px;
+  box-shadow: inset 0 0 0.7em 0.5em #0c579c;
 }
 .footer-contact-title {
   color: #eef5fc;
@@ -197,6 +193,9 @@
   list-style: none;
   text-align: center;
   padding: 5px;
+}
+.footer-icon {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
