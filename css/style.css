@@ -15,56 +15,46 @@
 }
 
 .card {
-  margin: 20 0 20 0;
-  border-radius: 3px;
-  padding: 20 0 20 20;
-  height: 250px;
-  width: 40%;
-  display: flex;
-  box-shadow: #dbdbdb 6px 2px 16px 0px, #dbdbdb -6px -2px 16px 0px;
-}
-.card-left {
-  width: 60%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 10px solid #127bde;
+  height: 500px;
+  width: 350px;
 }
-.card-left-title {
-  color: #0c579c;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-size: 42px;
-}
-.card-left-text {
-  color: #0c579c;
-  font-family: "Young Serif", sans-serif;
-}
-.card-left-price {
-  color: #127bde;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  font-size: 32px;
-}
-.card-left-button {
-  height: 40px;
-  width: 80px;
+.card-top {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: #127bde;
-  color: #eef5fc;
-  border: 3px solid #127bde;
-  border-radius: 5px;
-  margin: 3px;
-  cursor: pointer;
+  padding-bottom: 5px;
 }
-.card-left-button:hover {
-  background-color: #eef5fc;
-  color: #127bde;
-  transition: 0.5s;
-}
-.card-right {
-  width: 40%;
-}
-.card-right-image {
+.card-top-image {
   height: 100%;
+}
+.card-bottom {
+  padding-top: 5px;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  background-color: #127bde;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-bottom-header {
+  color: #eef5fc;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+.card-bottom-price {
+  color: #eef5fc;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 * {
@@ -159,6 +149,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.gallery-title {
+  color: #0c579c;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  padding-bottom: 20px;
 }
 .gallery .cards-wrapper {
   display: flex;

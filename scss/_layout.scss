@@ -86,6 +86,11 @@
     height: 1000px;
     width: 100%;
     @include flexLayout;
+    flex-direction: column;
+    &-title{
+        @include titleLayout(46px, $color-dark-blue);
+        padding-bottom: 20px;
+    }
     .cards-wrapper{
         display: flex;
         flex-wrap: wrap;
