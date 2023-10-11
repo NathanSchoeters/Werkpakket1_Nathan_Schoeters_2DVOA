@@ -18,43 +18,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
   border: 10px solid #127bde;
   height: 500px;
   width: 350px;
+  margin: 5px;
+  cursor: pointer;
 }
 .card-top {
   height: 80%;
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #127bde;
+  background-color: #0c579c;
   padding-bottom: 5px;
 }
 .card-top-image {
   height: 100%;
+  max-width: 100%;
 }
 .card-bottom {
-  padding-top: 5px;
   width: 100%;
   height: 20%;
   text-align: center;
   background-color: #127bde;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
-.card-bottom-header {
+.card-bottom-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.card-bottom-title-header {
   color: #eef5fc;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   font-size: 28px;
 }
-.card-bottom-price {
+.card-bottom-title-price {
   color: #eef5fc;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
+}
+.card-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.card-bottom-info-text {
+  color: #eef5fc;
+  font-family: "Young Serif", sans-serif;
+  font-size: 18px;
+}
+.card-bottom-info-button {
+  height: 40px;
+  width: 80px;
+  background-color: #127bde;
+  color: #eef5fc;
+  border: 3px solid #127bde;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+  background-color: #eef5fc;
+  color: #127bde;
+  width: 50px;
+}
+.card-bottom-info-button:hover {
+  background-color: #eef5fc;
+  color: #127bde;
+  transition: 0.5s;
 }
 
 * {
@@ -114,6 +152,7 @@
   align-items: center;
   background-color: #127bde;
   box-shadow: inset 0 0 0.7em 0.5em #0c579c;
+  margin-bottom: 100px;
 }
 .about-info {
   width: 80%;
@@ -132,6 +171,7 @@
 .about-info-left .about-info-text {
   color: #eef5fc;
   font-family: "Young Serif", sans-serif;
+  font-size: 18px;
 }
 .about-info-right {
   width: 50%;
@@ -143,9 +183,30 @@
   top: 60px;
 }
 
+.intro {
+  height: 200px;
+  background-color: #127bde;
+  box-shadow: inset 0 0 0.7em 0.5em #0c579c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro-header {
+  color: #eef5fc;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+}
+.intro-text {
+  color: #eef5fc;
+  font-family: "Young Serif", sans-serif;
+  font-size: 18px;
+}
+
 .gallery {
-  height: 1000px;
   width: 100%;
+  margin: 30 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,8 +222,59 @@
 .gallery .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
+  justify-content: center;
+  width: 88vw;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100 0 0 0;
+}
+.products-filters-search {
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #127bde;
+  padding-left: 10px;
+}
+.products-filters-button {
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  border: 2px solid #127bde;
+  border-radius: 5px;
+  background-color: #eef5fc;
+  color: #0c579c;
+}
+.products-filters-button:hover {
+  background-color: #127bde;
+  color: #eef5fc;
+}
+.products-pages-button {
+  height: 40px;
+  width: 80px;
+  background-color: #127bde;
+  color: #eef5fc;
+  border: 3px solid #127bde;
+  border-radius: 5px;
+  margin: 3px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #eef5fc;
+  color: #0c579c;
+}
+.products-pages-button:hover {
+  background-color: #eef5fc;
+  color: #127bde;
+  transition: 0.5s;
+}
+.products-pages-button:hover {
+  background-color: #127bde;
+  color: #eef5fc;
 }
 
 .footer {
@@ -173,7 +285,7 @@
   background-color: #127bde;
   color: #eef5fc;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 0;
+  margin: 100 0 0 0;
   height: 250px;
   box-shadow: inset 0 0 0.7em 0.5em #0c579c;
 }

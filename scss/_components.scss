@@ -4,15 +4,16 @@
     @include buttonLayout();
 }
 
+
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
     border: 10px solid $color-primary;
     height: 500px;
     width: 350px;
-
+    margin: 5px;
+    cursor: pointer;
     &-top{
         height: 80%;
         width: 100%;
@@ -20,65 +21,46 @@
         justify-content: center;
         &-image{
             height: 100%;
+            max-width: 100%;
         }
-        background-color: $color-primary;
+        background-color: $color-dark-blue;
         padding-bottom: 5px;
     }
     &-bottom{
-        padding-top: 5px;
         width: 100%;
         height: 20%;
         text-align: center;
         background-color: $color-primary;
-        display: flex;
-        align-items: center;
+        @include flexLayout;
         flex-direction: column;
-        justify-content: center;
-        &-header{
-            @include titleLayout(28px)
+        &-title{
+            @include flexLayout(space-between);
+            flex-direction: row;
+            width: 100%;
+            &-header{
+                @include titleLayout(28px);
+            }
+            &-price{
+                color: $color-white;
+                font-family: $font-poppins;
+                font-size: 20px;
+            }
         }
-        &-price{
-            color: $color-white;
-            font-family: $font-poppins;
-            font-size: 20px;
+        &-info{
+            @include flexLayout(space-between);
+            flex-direction: row;
+            width: 100%;
+            &-text{
+                @include textLayout;
+            }
+            &-button{
+                @include buttonLayout;
+                background-color: $color-white;
+                color: $color-primary;
+                width: 50px;
+            }
         }
+        
+        
     }
 }
-
-// .card{
-//     margin: 20 0 20 0;
-//     border-radius: 3px;
-//     padding: 20 0 20 20;
-//     height: 250px;
-//     width: 40%;
-//     display: flex;
-//     box-shadow: $color-secondary 6px 2px 16px 0px, $color-secondary -6px -2px 16px 0px;
-//     &-left{
-//         width: 60%;
-//         height:100%;
-//         display: flex;
-//         flex-direction: column;
-//         &-title{
-//             @include titleLayout(42px,$color-dark-blue);
-//         }
-//         &-text{
-//             color: $color-dark-blue;
-//             font-family: $font-Young-Serif;
-            
-//         }
-//         &-price{
-//             @include titleLayout(32px, $color-primary)
-//         }
-//         &-button{
-//             @include buttonLayout();
-//         }
-//     }
-
-//     &-right{
-//         width: 40%;
-//         &-image{
-//             height: 100%;
-//         }
-//     }
-// }
-

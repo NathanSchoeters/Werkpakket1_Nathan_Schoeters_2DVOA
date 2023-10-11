@@ -7,7 +7,6 @@ $color-dark-blue: #0c579c;
 $color-grey: #d2d3d3;
 
 
-
 //Fonts
 $font-Caveat: 'Caveat', sans-serif;
 $font-poppins: 'Poppins', sans-serif;
@@ -24,6 +23,12 @@ $font-Young-Serif: 'Young Serif', sans-serif;
     font-weight: bold;
     font-family: $font-poppins;
     font-size: $font-size;
+}
+
+@mixin textLayout($text-color: $color-white){
+    color: $text-color;
+    font-family: $font-Young-Serif;
+    font-size: 18px;
 }
 
 @mixin buttonLayout{
