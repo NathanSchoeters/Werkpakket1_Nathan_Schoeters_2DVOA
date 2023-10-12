@@ -6,6 +6,7 @@
   border: 3px solid #127bde;
   border-radius: 5px;
   margin: 3px;
+  font-weight: bold;
   cursor: pointer;
 }
 .navbar-button:hover {
@@ -84,6 +85,7 @@
   border: 3px solid #127bde;
   border-radius: 5px;
   margin: 3px;
+  font-weight: bold;
   cursor: pointer;
   background-color: #eef5fc;
   color: #127bde;
@@ -225,6 +227,9 @@
   justify-content: center;
   width: 88vw;
 }
+.gallery .cards-wrapper .product-link {
+  text-decoration: none;
+}
 
 .products {
   display: flex;
@@ -261,6 +266,7 @@
   border: 3px solid #127bde;
   border-radius: 5px;
   margin: 3px;
+  font-weight: bold;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -306,6 +312,157 @@
 }
 .footer-icon {
   color: white;
+}
+
+.login {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-top-logo {
+  margin-top: 100px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+}
+.login-form-label {
+  color: #0c579c;
+  font-family: "Young Serif", sans-serif;
+  font-size: 18px;
+}
+.login-form-input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #127bde;
+  margin-bottom: 5px;
+}
+.login-form-newPassword {
+  text-align: right;
+  color: #0c579c;
+  font-family: "Caveat", sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.login-form-button {
+  height: 40px;
+  width: 80px;
+  background-color: #127bde;
+  color: #eef5fc;
+  border: 3px solid #127bde;
+  border-radius: 5px;
+  margin: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 400px;
+}
+.login-form-button:hover {
+  background-color: #eef5fc;
+  color: #127bde;
+  transition: 0.5s;
+}
+
+.productSection {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #127bde;
+  box-shadow: inset 0 0 0.7em 0.5em #0c579c;
+  margin-bottom: 200px;
+}
+.productSection .productContainer {
+  margin: 30px;
+  width: 80%;
+}
+.productSection .productContainer-name {
+  color: #eef5fc;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  margin-left: 110px;
+}
+.productSection .productContainer .productInfo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+}
+.productSection .productContainer .productInfo-left {
+  width: 30%;
+  background-color: #0c579c;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productSection .productContainer .productInfo-left-image {
+  max-height: 95%;
+}
+.productSection .productContainer .productInfo-right {
+  padding-left: 400px;
+  width: 40%;
+  padding: 20px;
+  color: #eef5fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.productSection .productContainer .productInfo-right-price {
+  color: #eef5fc;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  margin-bottom: -10px;
+}
+.productSection .productContainer .productInfo-right-text {
+  color: #eef5fc;
+  font-family: "Young Serif", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.productSection .productContainer .productInfo-right-counter {
+  display: flex;
+  margin-bottom: 5px;
+}
+.productSection .productContainer .productInfo-right-counter .counter-button {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #0c579c;
+  background-color: #0c579c;
+  color: #eef5fc;
+}
+.productSection .productContainer .productInfo-right-counter .counter-input {
+  height: 25px;
+  width: 50px;
+  border: 3px solid #0c579c;
+  background-color: #eef5fc;
+  text-align: center;
+  color: #0c579c;
+  font-weight: bold;
+}
+.productSection .productContainer .productInfo-right-button {
+  height: 40px;
+  width: 80px;
+  background-color: #127bde;
+  color: #eef5fc;
+  border: 3px solid #127bde;
+  border-radius: 5px;
+  margin: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #0c579c;
+  width: 120px;
+}
+.productSection .productContainer .productInfo-right-button:hover {
+  background-color: #eef5fc;
+  color: #127bde;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
