@@ -546,6 +546,28 @@
 }
 /* phone */
 @media screen and (max-width: 414px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+  }
+  .navbar-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-navigation {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-navigation .nav-list-item {
+    margin: 0 5px;
+  }
+  .navbar-buttons {
+    display: flex;
+    justify-content: center;
+  }
   .about {
     height: 250px;
   }

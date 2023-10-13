@@ -390,6 +390,30 @@
 
 @media screen and (max-width: 414px) {
 
+    .navbar{
+        @include flexLayout;
+        flex-direction: column;
+        height: 200px;
+        &-logo{
+            display: flex;
+            justify-content: center;
+        }
+    
+        &-navigation{
+            display: flex;
+            justify-content: center;
+            .nav-list{
+                &-item{
+                    margin: 0 5px;
+                }
+            }
+        }
+        &-buttons{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     .about{
         height: 250px;
         &-info{
